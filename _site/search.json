@@ -1,0 +1,43 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-10T16:24:44+08:00"
+    },
+    {
+      "path": "index.html",
+      "title": "SMT201 GIS Project",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-10T16:25:03+08:00"
+    },
+    {
+      "path": "overview.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Lee Jia Li",
+          "url": {}
+        },
+        {
+          "name": "Lee Wenxi Tammy",
+          "url": {}
+        },
+        {
+          "name": "Ang Xin Yee",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-10T16:24:46+08:00"
+    }
+  ],
+  "collections": []
+}
