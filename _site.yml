@@ -7,6 +7,16 @@ navbar:
   right:
     - text: "Overview"
       href: overview.html
+    - text: "Data Preparation"
+      href: data.html
+    - text: "Site Survey"
+      href: survey.html
+    - text: "Site Selection"
+      href: selection.html
+    - text: "Poster"
+      href: poster.html
+    - text: "Full Report"
+      href: report.html
     - text: "Home"
       href: index.html
     - text: "About"

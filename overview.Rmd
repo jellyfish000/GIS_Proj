@@ -1,7 +1,8 @@
 ---
-title: "Untitled"
+title: "SMT201 Project"
 description: |
-  A new article created using the Distill format.
+  This website contains information of our project which aims to propose a new capital city in East Kalimantan to relieve the stress of Jakarta as a primary hub and to improve uneven development within Indonesia. 
+
 author:
   - name: Lee Jia Li
   - name: Lee Wenxi Tammy
@@ -9,6 +10,52 @@ author:
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
+
+## Introduction
+In 2019, President Joko Widodo announced plans to relocate the capital to Kalimantan on the island of Borneo, specifically East Kalimantan. Some of the primary objectives of this plan is to reduce developmental inequality between Java and other islands within the country and to reduce the burden of Jakarta as a primary economic hub. 
+
+### Jakarta
+The current capital Jakarta - which houses more than 10 million people - is overwhelmed as a primary economic hub for Indonesia due to overpopulation. The extremely high population density gives rise to multiple issues such as traffic gridlock and heavy pollution. This is further exacerbated by the lack of access to basic necessities such as water due to over extraction of groundwater.
+
+Furthermore, the physical plot of land is facing challenges such as increasing risk of catastrophic natural disasters and sinking of land. In fact, Jakarta is sinking by as much as 25cm a year where almost half sits below sea level. 
+
+Hence, the purpose of our project is to propose a new capital city in East Kalimantan to relieve the stress of Jakarta as a primary hub and to improve uneven development within Indonesia. 
+
+### Kalimantan Timur
+Kalimantan Timur (East Kalimantan) is home to major mining and manufacturing activities. The area is also home to many rainforest species such as the Orang Utans species. However, rapid deforestation occurs in Kalimantan due to many instances of palm oil producers burning forested areas to clear land for plantations. As such, Kalimantan Timur is also susceptible to pollution from coal mining and haze from annual forest fires and the species and livelihood of communities that depend on these rainforests are threatened.
+
+## Motivation of the Project
+
+
+## Project Objective
+Our team wants to help Indonesia facilitate a smooth relocation of the capital city to shift the economic stress placed on Jakarta. 
+
+In order to choose a suitable location for this city, the following factors are considered and weighed:
+
++ Environmental factors: to pose the least disruption to the environment in the existing area and be far away from natural disasters:
+    + Coastal floods
+    + Hotspots
+    + Slopes
++ Accessibility factors: to ensure that existing infrastructures are adequate for the new capital city
+   + Seaport Airport
+   + Roads
+   + Proximity to Urban Settlements
+
+We aim to propose a site that promotes sustainable development to ensure that the of the new capital.
+
+## Scope of Work
+
+The project will comprise of, but not limited to the followings steps:
+
++ Selection of project area, this year the project area is provided.
++ Data collection, extraction, integration, transformation and wrangling.
++ Designing and building GIS model and database
++ Preparing report of survey
++ Performing site suitability analysis by integrating GIS and multi-criteria evaluation methods.
++ Preparing site suitability analysis report including detail discussion of the analysing method used.
++ Preparing poster and project webpage.
+
+## Project Schedule
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

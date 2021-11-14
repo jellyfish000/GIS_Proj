@@ -6,7 +6,14 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-10T16:24:44+08:00"
+      "last_modified": "2021-11-15T01:18:30+08:00"
+    },
+    {
+      "path": "data.html",
+      "title": "Data Collection",
+      "author": [],
+      "contents": "\r\nData\r\nContent\r\nFile Type\r\nSource\r\nBatas Desa & Data Kependudukan Tahun 2019 Seluruh Indonesia.\r\nThis data set provides comprehensive population data at the sub-district level.\r\nShapefile\r\nhttps://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html\r\nRupa Bumi Indonesia (RBI) Provinsi Kalimantan Timur Per Wilayah (Kabupaten/Kota).\r\nThis data repository provides a comprehensive collection of topographical data layers of East Kalimantan.\r\nShapefile\r\nhttps://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html\r\nDEM SRTM 30m\r\ndigital elevation model at 30m resolution\r\n\r\nhttps://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html\r\nGeological data\r\n\r\nShapefile\r\nhttps://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html\r\nForest fire hot spot data\r\nThis repository provides several years of forest hot spots data.\r\nShapefile\r\nhttps://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html\r\nBuildings and Settlements\r\n\r\nShapefile\r\nhttps://www.indonesia-geospasial.com/2020/12/download-shp-pemukiman-detail-seluruh.html\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T02:14:26+08:00"
     },
     {
       "path": "index.html",
@@ -14,12 +21,12 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-10T16:25:03+08:00"
+      "last_modified": "2021-11-15T01:18:30+08:00"
     },
     {
       "path": "overview.html",
-      "title": "Untitled",
-      "description": "A new article created using the Distill format.\n",
+      "title": "SMT201 Project",
+      "description": "This website contains information of our project which aims to propose a new capital city in East Kalimantan to relieve the stress of Jakarta as a primary hub and to improve uneven development within Indonesia. \n",
       "author": [
         {
           "name": "Lee Jia Li",
@@ -35,8 +42,29 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-10T16:24:46+08:00"
+      "contents": "\r\nIntroduction\r\nIn 2019, President Joko Widodo announced plans to relocate the capital to Kalimantan on the island of Borneo, specifically East Kalimantan. Some of the primary objectives of this plan is to reduce developmental inequality between Java and other islands within the country and to reduce the burden of Jakarta as a primary economic hub.\r\nJakarta\r\nThe current capital Jakarta - which houses more than 10 million people - is overwhelmed as a primary economic hub for Indonesia due to overpopulation. The extremely high population density gives rise to multiple issues such as traffic gridlock and heavy pollution. This is further exacerbated by the lack of access to basic necessities such as water due to over extraction of groundwater.\r\nFurthermore, the physical plot of land is facing challenges such as increasing risk of catastrophic natural disasters and sinking of land. In fact, Jakarta is sinking by as much as 25cm a year where almost half sits below sea level.\r\nHence, the purpose of our project is to propose a new capital city in East Kalimantan to relieve the stress of Jakarta as a primary hub and to improve uneven development within Indonesia.\r\nKalimantan Timur\r\nKalimantan Timur (East Kalimantan) is home to major mining and manufacturing activities. The area is also home to many rainforest species such as the Orang Utans species. However, rapid deforestation occurs in Kalimantan due to many instances of palm oil producers burning forested areas to clear land for plantations. As such, Kalimantan Timur is also susceptible to pollution from coal mining and haze from annual forest fires and the species and livelihood of communities that depend on these rainforests are threatened.\r\nMotivation of the Project\r\nProject Objective\r\nOur team wants to help Indonesia facilitate a smooth relocation of the capital city to shift the economic stress placed on Jakarta.\r\nIn order to choose a suitable location for this city, the following factors are considered and weighed:\r\nEnvironmental factors: to pose the least disruption to the environment in the existing area and be far away from natural disasters:\r\nCoastal floods\r\nHotspots\r\nSlopes\r\n\r\nAccessibility factors: to ensure that existing infrastructures are adequate for the new capital city\r\nSeaport Airport\r\nRoads\r\nProximity to Urban Settlements\r\n\r\nWe aim to propose a site that promotes sustainable development to ensure that the of the new capital.\r\nScope of Work\r\nThe project will comprise of, but not limited to the followings steps:\r\nSelection of project area, this year the project area is provided.\r\nData collection, extraction, integration, transformation and wrangling.\r\nDesigning and building GIS model and database\r\nPreparing report of survey\r\nPerforming site suitability analysis by integrating GIS and multi-criteria evaluation methods.\r\nPreparing site suitability analysis report including detail discussion of the analysing method used.\r\nPreparing poster and project webpage.\r\nProject Schedule\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T02:01:25+08:00"
+    },
+    {
+      "path": "report.html",
+      "title": "report",
+      "author": [],
+      "contents": "\r\nR Markdown\r\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\r\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\r\n\r\n\r\nsummary(cars)\r\n\r\n\r\n     speed           dist       \r\n Min.   : 4.0   Min.   :  2.00  \r\n 1st Qu.:12.0   1st Qu.: 26.00  \r\n Median :15.0   Median : 36.00  \r\n Mean   :15.4   Mean   : 42.98  \r\n 3rd Qu.:19.0   3rd Qu.: 56.00  \r\n Max.   :25.0   Max.   :120.00  \r\n\r\nIncluding Plots\r\nYou can also embed plots, for example:\r\n\r\n\r\n\r\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T02:15:08+08:00"
+    },
+    {
+      "path": "selection.html",
+      "title": "selection",
+      "author": [],
+      "contents": "\r\nR Markdown\r\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\r\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\r\n\r\n\r\nsummary(cars)\r\n\r\n\r\n     speed           dist       \r\n Min.   : 4.0   Min.   :  2.00  \r\n 1st Qu.:12.0   1st Qu.: 26.00  \r\n Median :15.0   Median : 36.00  \r\n Mean   :15.4   Mean   : 42.98  \r\n 3rd Qu.:19.0   3rd Qu.: 56.00  \r\n Max.   :25.0   Max.   :120.00  \r\n\r\nIncluding Plots\r\nYou can also embed plots, for example:\r\n\r\n\r\n\r\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T02:15:01+08:00"
+    },
+    {
+      "path": "survey.html",
+      "title": "survey",
+      "author": [],
+      "contents": "\r\nR Markdown\r\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\r\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\r\n\r\n\r\nsummary(cars)\r\n\r\n\r\n     speed           dist       \r\n Min.   : 4.0   Min.   :  2.00  \r\n 1st Qu.:12.0   1st Qu.: 26.00  \r\n Median :15.0   Median : 36.00  \r\n Mean   :15.4   Mean   : 42.98  \r\n 3rd Qu.:19.0   3rd Qu.: 56.00  \r\n Max.   :25.0   Max.   :120.00  \r\n\r\nIncluding Plots\r\nYou can also embed plots, for example:\r\n\r\n\r\n\r\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T02:14:48+08:00"
     }
   ],
   "collections": []

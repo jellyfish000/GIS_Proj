@@ -1,0 +1,15 @@
+---
+title: "Data Collection"
+output: distill::distill_article
+---
+
+|    Data        |      Content             |    File Type    |   Source        |
+|----------------|--------------------------|-----------------|-----------------|
+|Batas Desa & Data Kependudukan Tahun 2019 Seluruh Indonesia.|This data set provides comprehensive population data at the sub-district level. |Shapefile |https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html|
+|Rupa Bumi Indonesia (RBI) Provinsi Kalimantan Timur Per Wilayah (Kabupaten/Kota).|This data repository provides a comprehensive collection of topographical data layers of East Kalimantan.|Shapefile|https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html|
+|DEM SRTM 30m |digital elevation model at 30m resolution||https://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html|
+|Geological data||Shapefile|https://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html|
+|Forest fire hot spot data|This repository provides several years of forest hot spots data.|Shapefile|https://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html|
+|Buildings and Settlements||Shapefile|https://www.indonesia-geospasial.com/2020/12/download-shp-pemukiman-detail-seluruh.html|
+
+
