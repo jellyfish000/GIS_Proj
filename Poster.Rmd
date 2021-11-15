@@ -1,5 +1,6 @@
 ---
 title: RELOKOTA
+       T13
 author:
   - name: Lee Jia Li
   - name: Tammy Lee Wenxi
@@ -14,7 +15,7 @@ primary_colour: "#DAE2D5"
 body_bgcol: "#FFEEE6"
 body_textsize: "30px"
 sectitle_textsize: "55px"
-columnline_width: "0.5mm"
+columnline_width: "0.10mm"
 column_margins: "0.25in"
 
 output: 
@@ -24,58 +25,54 @@ bibliography: packages.bib
 ---
 
 
-
-
-
 # Issues and Problem
 
 This project aims to propose the most suitable sites for the relocation of the new capital in Indonesia while taking environmental, economic and accessibility factors into consideration while prioritizing sustainability.
 
 # Motivation
-
-East Kalimantan faces its own set of challenges and concerns. With multiple factors of equal importance to consider, trade-off is involved for a big project like building a new city. Hence it is important to apply effective urban planning techniques so that city leaders are able to make more informed and balanced decisions.
+East Kalimantan faces its own set of challenges and concerns. With multiple important factors to consider, it is important to apply effective urban planning techniques so that city leaders are able to make more informed and balanced decisions.
 
 # Approach
-
 With the help of QGIS tools and built-in plugins, we plan to use GIS‐Based Multiple‐Criteria Decision Analysis to determine the suitable site. To determine the factor scores for each layer, we use the Analytic Hierarchy Process (AHP) combined with raster-based GIS analysis to produce spatial information of the potential site. For the survey of sites we used vector-based GIS analysis with maps for visualization.
 
-# Model
+# Report of Survey
 ![settlement](https://user-images.githubusercontent.com/91875763/141743361-2b840ece-dc7c-44ab-9561-85013c892cfe.png)
 Currently the major population is gathered at Kota Balikpapan and Kota Samarinda, while the rest of the population are quite distributed across the study area. This is a natural phenomenon as rural-urban migration is common with the growth of cities.
 ![forest](https://user-images.githubusercontent.com/91875763/141743379-38856ab3-74db-4d64-a5e7-761aaf43a430.png)
 There are 3 mangroves in the study area located at Sepaku and coast of Penajam in Penajam Paser Utara and Muara Jawa area of Kutai Kartanegara. The forests are spread out across the study layer, mainly throughout Kutai Kartanegara where the forest around Loa Janan area remains largely undisturbed.
-
 ![hotspot](https://user-images.githubusercontent.com/91875763/141743381-ea3da5fe-ef97-4c13-9ece-17746f3c8f4f.png)
-Most of the area with higher hotspot intensity appeared close to the forest throughout the study area. For example, some of the hotspots appeared near forests such as peatlands along the Makahas river in Kota Samarinda and Kutai Kartanegara which could be due to dry season or deforestation.
+Clusters of hotspots appear frequently near forested areas throughout the study area. 
 
 ![ports](https://user-images.githubusercontent.com/91875763/141743387-92bb9f86-91f5-4f44-97ee-5ed0217ce61a.png)
-There are 2 International Airports found in two of the cities: Kota Samarinda and Kota Balikpapan which facilitates tourism and trade by providing access and connectivity to the global markets. 
-Most of the seaports along the Mahakam river that flows through Kutai Kartanegara and Kota Samarinda. There are also some seaports found near the BALIKPAPAN bay and along rivers in Penajam Paser Utara.Inter-island ports located nearer to the coast at Muara Jawa, Kutai Kartanegara area are typically used to transport cargo for trading.
-
+Airports found in two of the cities: Kota Samarinda and Kota Balikpapan which facilitates tourism and trade by providing connectivity to the global markets. 
+Most of the seaports along the Mahakam river that flows through Kutai Kartanegara and Kota Samarinda. There are also some seaports found near the Balikpapan bay and along rivers in Penajam Paser Utara.
 
 ![roads](https://user-images.githubusercontent.com/91875763/141743393-e799f154-4332-465e-8779-947f7a61f4e0.png)
-The distribution shows that there is high road connectivity within the study area especially in the city area of Kota Balikpapan and Kota Samarinda, which facilitates accessibility to urban services.
+Distribution of roads show high connectivity within the study area especially in the city area of Kota Balikpapan and Kota Samarinda, which facilitates accessibility to urban services.
 
 #   Steps
-1.Gather a vector-based layer of all the relevant points
-2.Convert vector layer to raster layer
-3.Create a proximity layer for each raster layer
+1. Gather a vector-based layer of all the relevant points
+2. Convert vector layer to raster layer
+3. Create a proximity layer for each raster layer 
 4. Conduct AHP and get the score for each factor
 <img width="500" alt="ahp"
 src="https://user-images.githubusercontent.com/91875763/141743376-531aaa0c-d610-4d63-b57d-08516dcff22d.png">
-
-
-<img width="500" alt="result" src="https://user-images.githubusercontent.com/91875763/141743391-fcf094ca-01cd-40e5-84af-9e87b532987f.png">
-
+5. Standardise factor score layers using the following formula
+6. Use Raster calculator to create a AHP suitability layer
+7. Vectorise the AHP suitability layer
+8. Keep the sites labelled 1, which are potential areas for the site selection
 #   Result
+![site1](https://user-images.githubusercontent.com/91875763/141743399-f50ee268-98ed-487b-a1b3-27d2688cc578.png)![site2](https://user-images.githubusercontent.com/91875763/141743405-8b905ed0-839c-4a39-b00a-fbbd29aae3cf.png)
 
-![site1](https://user-images.githubusercontent.com/91875763/141743399-f50ee268-98ed-487b-a1b3-27d2688cc578.png)
-![site2](https://user-images.githubusercontent.com/91875763/141743405-8b905ed0-839c-4a39-b00a-fbbd29aae3cf.png)
+Due to many potential site areas, we have decided to narrow down to 2 sites by considering the proximity to major settlements and infrastructures. These 2 areas are close to medical care and water treatment, which are necessities for a city.
 
-
-
+As for the deciding factor, we decided to re-emphasise on the importance of preserving the remaining forest in our study area. As such, we have decided to go with the site that covers the least amount of forest.
+![site](https://user-images.githubusercontent.com/91875763/141779721-33047b19-64ec-4b95-a5d1-f160d9df42f8.png)
+Finally, this is the area of our proposed site. It is located near the border of Kutai Kartanegara and Penajam Paser Utara, cutting across Suko Mulyo, Semoi Dua and Argo Mulyo.
 ```{r, include=FALSE}
 knitr::write_bib(c('knitr','rmarkdown','posterdown','pagedown'), 'packages.bib')
 ```
-
-# References
+# Future Research
++ Improve the score of our AHP by lowering the consistency score. 
++ Consult professionals to give a more realistic weightage and comparison.
++ Include other important factors such as proximity to water treatment plants in AHP to ensures that all other important aspects are not overlooked
