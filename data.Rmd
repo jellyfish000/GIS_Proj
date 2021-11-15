@@ -1,7 +1,8 @@
 ---
-title: "Data Collection"
+title: "Data Preparation"
 output: distill::distill_article
 ---
+#   Relevant Data
 
 |    Data        |      Content             |    File Type    |   Source        |
 |----------------|--------------------------|-----------------|-----------------|
@@ -10,6 +11,144 @@ output: distill::distill_article
 |DEM SRTM 30m |digital elevation model at 30m resolution||https://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html|
 |Geological data||Shapefile|https://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html|
 |Forest fire hot spot data|This repository provides several years of forest hot spots data.|Shapefile|https://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html|
+
+#   Extracting Study Area
+
++   Import BATAS DESA DESEMBER 2019 DUKCAPIL KALIMANTAN TIMUR into QGIS
++ On the bottom right of the window, select the correct output, then click ‘Ok’ 
+
+![1](https://user-images.githubusercontent.com/91875763/141800107-28fde011-022a-4340-9179-fc04c14a89e1.png)
+
++   Extracting study area:
+  +   Right click on the layer and select Open Attribute Table
+  +   Click on Select features by expression, click on Fields and Values, find ‘Kab Kota’ and type in the following into the expression box
+  +   "KAB_KOTA" = 'KOTA BALIKPAPAN' or  "KAB_KOTA" ='KOTA SAMARINDA' or "KECAMATAN" = 'ANGGANA' or "KECAMATAN" =  'LOA JANAN'  or "KECAMATAN" = 'LOA KULU' or  "KECAMATAN" ='MARANG KAYU' or  "KECAMATAN" ='MUARA JAWA' or "KECAMATAN" = 'SAMBOJA' or "KECAMATAN" = 'SANGA SANGA' or "KECAMATAN" = 'SEBULU' or  "KECAMATAN" = 'TENGGARONG' or  "KECAMATAN" = 'TENGGARONG SEBERANG' or  "KECAMATAN" = 'MUARA BADAK' or  "KECAMATAN" ='BABULU' or  "KECAMATAN" = 'PENAJAM' or  "KECAMATA#Import relevant dataN" ='SEPAKU' or  "KECAMATAN" = 'WARU'
+
+  +   Click on Select features after you are done and close the expression box 
+  
+![2](https://user-images.githubusercontent.com/91875763/141800109-3d8e9a21-5eb7-4cec-ba7d-efdf5bca8a5f.png)
+
+  +   Right click on the layer and click Export → Save select features as, save it as a GeoPackage and call it “Study_area”
+  
+![3](https://user-images.githubusercontent.com/91875763/141800116-655cbc30-8332-42ce-98d1-27968762b7ad.png)
+
+#   Relevant Layers
+####    Import data from all four layers
+|   Layer Name |    Translation|
+|---------------|----------------|
+airport |    airport
+gardulistrik | power plant 
+genlistrik | electric generator 
+menaralistrik | electricity tower
+menaratelepon |   cell tower
+olahairminum | drinking water
+pelabuhan | seaport
+pemukiman | settlement
+pendidikan | education
+puskesmas | public health centre
+rumahsakit | hospital
+semakbelukar | shrub
+hutanabasah | wet forest
+menara Exploit Minyak| oil Extraction
+sumur Minyak|oil Extraction
+olah Minyak |oil Extraction
+depo Minyak | oil Processing
+olah Gas | gas Extraction
+agrikebun| agriculture
+tambang|    mines
+garisrpantain   | coasts
+sungai| rivers
+industri | industries
+
+#   Cleaning the data
++   As you import all your layers, ensure that none of them are completely empty. You can check by looking at the attribute table of the layer. If they are empty, it is likely that the file is empty so you can proceed to delete it. 
++   Right click on the layer, select Open Attribute Table, click on Toggle edit, select the rows that are empty and select Delete
++   Click on Toggle editing again to save the table 
++   Some layers completely overlap with each other. Go to Processing → Toolbox, type in “Merge” into the search box, select Merge vector layers, merge all the overlapped layers (Select “Do not filter” option by clicking on the Toolbar icon found at the side)
+
+![6](https://user-images.githubusercontent.com/91875763/141800125-b62cf57d-8652-4914-b1f6-b505a74facc7.png)
+
++   In the toolbox, type in “Delete”, select Delete duplicate by geometry, select the Merged layer for the Input layer, click ‘Run’ 
+Type in “Clip” into the search box, click on Clip vector by extent 
++   Select the layers you want and for the Clipping extent, click on Calculate from layer → Study area 
++   Then click on Select by location , input layer is the clipped layer, comparing layer is the study area, then click ‘Run’
++   Right click on the layer, Export → Save selected features into your geopackage
++   Delete your temporary layers
+
+#   For AHP Analysis
+
+##    Rasterising
+
++   At the Layers panel, click on the relevant layer to make it active
++   From the icon bar, click on the Open Attribute Table icon 
++   Click on the Open Field Calculator icon
++   Keep Create a new field option check
++   For Output field name, type POI_CODE
+At the Expression pane, type 1
+Click ‘Ok’ and save your changes by clicking on toggle editing 
++   From the menu bar, select Raster → Conversion → Rasterise (Vector to Raster). The Raster (Vector to Raster) dialog window appears.
++   For Input layer, select your relevant layer from the drop-down list
++   For Field to use for a burn-in value, select POI_CODE from the drop-down list.
++   For Output raster size units, select Georeferenced units
++   Keep both horizontal and vertical resolutions at 30
++   For Output extent, click on Calculate from Layer → DEM
+Click ‘Run’, then ‘Close’ the dialog box
+
+![4](https://user-images.githubusercontent.com/91875763/141800121-f43dcc54-3cee-481e-9a6c-c55e8767b810.png)
+
++   Right click on the layer and save as GeoPackage 
++   Delete the temporary layer
+
+##    Proximity Layer
+
++   Next, we create the proximity map
++   From the menu bar, select Raster → Analysis → Proximity (Raster Distance)
++   For Input layer, select raster_coasts from the drop-down list
++   For Distance units, select Georeferenced coordinates from the drop-down list
++   For Output data type, select Float32 from the drop-down list
++   Click ‘Run’ 
+
+![5](https://user-images.githubusercontent.com/91875763/141800123-7fc78206-8605-4258-8c39-8f8b7728d761.png)
+
++   Export the layer and save it as GeoPackage, name it prox_(insertrelevantname)
++   Delete the temporary layer
+
+
+##   Standardising factor scores
+
++   To standardize the factor scores, we have to input the following formula 
++   From the menu bar, click on Vector → Raster Calculator
+
+![7](https://user-images.githubusercontent.com/91875763/141800127-bdba0098-37d5-45ba-9fae-7abaed9fcec6.png)
+
++   Right click on the Slope layer, click on Properties  
++   From the Information tab, we can see the minimum and maximum values of the layer 
++   Input into the Expression pane of the Raster Calculator the following formula
++   X would be the layer that you want to factor 
++   For Minimum, type 0 
+For Maximum, copy the maximum from the Information tab and paste it into the formula
+
+![8](https://user-images.githubusercontent.com/91875763/141800132-b5b5055c-750e-456a-b963-f3f263b53f51.png)
+
++   Repeat step 40 for coast, river, volcano, airport, seaport, urban settlement, wet forest, shrubs and hotspot 
++   For factoring the roads layer
++   Type in “1 -” in front of the formula, the formula should look similar to the picture below
+After factoring the layers, we will add all the factors together 
++   From the menu bar, click on Vector → Raster Calculator
++   Type in the following into the Expression pane into the Raster Calculator 
+"Factor_Slope@1" * 0.078 + "Fac_coast@1" * 0.227 + "factor_river@1" * 0.227 + "fac_vol@1" * 0.227 + "FAC_Airport@1" * 0.051 + "Fac_Seaport@1" * 0.051 + "Fac_urban@1" * 0.064 + "Fac_Wet_Forest@1" * 0.096 + "Fac_Shrubs@1" * 0.096 + "Factor_hotspot@1" * 0.424 + "Fac_Road@1" * 0.060
++   Next, we will convert the suitable site identified above from raster into vector. The process is called vectorisation
++   From the menu bar, click on Raster → Conversion → Polygonize (Raster to Vector)
++ For Input Layer, select AHP_suitability from the drop-down list
++ For Name of the field to create, type Sites
+Keep the checkbox in front of Use 8-connectedness uncheck
++ Click ‘Run’ after you are done 
+
+
+
+
+  
+
 
 
 

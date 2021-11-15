@@ -86,26 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>SMT201 GIS Project: Data Collection</title>
+  <title>SMT201 GIS Project: Data Preparation</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="SMT201 GIS Project: Data Collection"/>
+  <meta property="og:title" content="SMT201 GIS Project: Data Preparation"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SMT201 GIS Project"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="SMT201 GIS Project: Data Collection"/>
+  <meta property="twitter:title" content="SMT201 GIS Project: Data Preparation"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Collection"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Preparation"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2050,7 +2050,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Data Collection","authors":[]}
+{"title":"Data Preparation","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2075,7 +2075,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Data Collection</h1>
+<h1>Data Preparation</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2083,6 +2083,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<h1 id="relevant-data">Relevant Data</h1>
 <table>
 <colgroup>
 <col style="width: 21%" />
@@ -2131,6 +2132,220 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 </tbody>
 </table>
+<h1 id="extracting-study-area">Extracting Study Area</h1>
+<ul>
+<li>Import BATAS DESA DESEMBER 2019 DUKCAPIL KALIMANTAN TIMUR into QGIS</li>
+<li>On the bottom right of the window, select the correct output, then click ‘Ok’</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800107-28fde011-022a-4340-9179-fc04c14a89e1.png" alt="1" /><figcaption aria-hidden="true">1</figcaption>
+</figure>
+<ul>
+<li><p>Extracting study area:</p></li>
+<li><p>Right click on the layer and select Open Attribute Table</p></li>
+<li><p>Click on Select features by expression, click on Fields and Values, find ‘Kab Kota’ and type in the following into the expression box</p></li>
+<li><p>“KAB_KOTA” = ‘KOTA BALIKPAPAN’ or “KAB_KOTA” =‘KOTA SAMARINDA’ or “KECAMATAN” = ‘ANGGANA’ or “KECAMATAN” = ‘LOA JANAN’ or “KECAMATAN” = ‘LOA KULU’ or “KECAMATAN” =‘MARANG KAYU’ or “KECAMATAN” =‘MUARA JAWA’ or “KECAMATAN” = ‘SAMBOJA’ or “KECAMATAN” = ‘SANGA SANGA’ or “KECAMATAN” = ‘SEBULU’ or “KECAMATAN” = ‘TENGGARONG’ or “KECAMATAN” = ‘TENGGARONG SEBERANG’ or “KECAMATAN” = ‘MUARA BADAK’ or “KECAMATAN” =‘BABULU’ or “KECAMATAN” = ‘PENAJAM’ or “KECAMATA#Import relevant dataN” =‘SEPAKU’ or “KECAMATAN” = ‘WARU’</p></li>
+<li><p>Click on Select features after you are done and close the expression box</p></li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800109-3d8e9a21-5eb7-4cec-ba7d-efdf5bca8a5f.png" alt="2" /><figcaption aria-hidden="true">2</figcaption>
+</figure>
+<ul>
+<li>Right click on the layer and click Export → Save select features as, save it as a GeoPackage and call it “Study_area”</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800116-655cbc30-8332-42ce-98d1-27968762b7ad.png" alt="3" /><figcaption aria-hidden="true">3</figcaption>
+</figure>
+<h1 id="relevant-layers">Relevant Layers</h1>
+<h4 id="import-data-from-all-four-layers">Import data from all four layers</h4>
+<table>
+<thead>
+<tr class="header">
+<th>Layer Name</th>
+<th>Translation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>airport</td>
+<td>airport</td>
+</tr>
+<tr class="even">
+<td>gardulistrik</td>
+<td>power plant</td>
+</tr>
+<tr class="odd">
+<td>genlistrik</td>
+<td>electric generator</td>
+</tr>
+<tr class="even">
+<td>menaralistrik</td>
+<td>electricity tower</td>
+</tr>
+<tr class="odd">
+<td>menaratelepon</td>
+<td>cell tower</td>
+</tr>
+<tr class="even">
+<td>olahairminum</td>
+<td>drinking water</td>
+</tr>
+<tr class="odd">
+<td>pelabuhan</td>
+<td>seaport</td>
+</tr>
+<tr class="even">
+<td>pemukiman</td>
+<td>settlement</td>
+</tr>
+<tr class="odd">
+<td>pendidikan</td>
+<td>education</td>
+</tr>
+<tr class="even">
+<td>puskesmas</td>
+<td>public health centre</td>
+</tr>
+<tr class="odd">
+<td>rumahsakit</td>
+<td>hospital</td>
+</tr>
+<tr class="even">
+<td>semakbelukar</td>
+<td>shrub</td>
+</tr>
+<tr class="odd">
+<td>hutanabasah</td>
+<td>wet forest</td>
+</tr>
+<tr class="even">
+<td>menara Exploit Minyak</td>
+<td>oil Extraction</td>
+</tr>
+<tr class="odd">
+<td>sumur Minyak</td>
+<td>oil Extraction</td>
+</tr>
+<tr class="even">
+<td>olah Minyak</td>
+<td>oil Extraction</td>
+</tr>
+<tr class="odd">
+<td>depo Minyak</td>
+<td>oil Processing</td>
+</tr>
+<tr class="even">
+<td>olah Gas</td>
+<td>gas Extraction</td>
+</tr>
+<tr class="odd">
+<td>agrikebun</td>
+<td>agriculture</td>
+</tr>
+<tr class="even">
+<td>tambang</td>
+<td>mines</td>
+</tr>
+<tr class="odd">
+<td>garisrpantain</td>
+<td>coasts</td>
+</tr>
+<tr class="even">
+<td>sungai</td>
+<td>rivers</td>
+</tr>
+<tr class="odd">
+<td>industri</td>
+<td>industries</td>
+</tr>
+</tbody>
+</table>
+<h1 id="cleaning-the-data">Cleaning the data</h1>
+<ul>
+<li>As you import all your layers, ensure that none of them are completely empty. You can check by looking at the attribute table of the layer. If they are empty, it is likely that the file is empty so you can proceed to delete it.</li>
+<li>Right click on the layer, select Open Attribute Table, click on Toggle edit, select the rows that are empty and select Delete</li>
+<li>Click on Toggle editing again to save the table</li>
+<li>Some layers completely overlap with each other. Go to Processing → Toolbox, type in “Merge” into the search box, select Merge vector layers, merge all the overlapped layers (Select “Do not filter” option by clicking on the Toolbar icon found at the side)</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800125-b62cf57d-8652-4914-b1f6-b505a74facc7.png" alt="6" /><figcaption aria-hidden="true">6</figcaption>
+</figure>
+<ul>
+<li>In the toolbox, type in “Delete”, select Delete duplicate by geometry, select the Merged layer for the Input layer, click ‘Run’ Type in “Clip” into the search box, click on Clip vector by extent</li>
+<li>Select the layers you want and for the Clipping extent, click on Calculate from layer → Study area</li>
+<li>Then click on Select by location , input layer is the clipped layer, comparing layer is the study area, then click ‘Run’</li>
+<li>Right click on the layer, Export → Save selected features into your geopackage</li>
+<li>Delete your temporary layers</li>
+</ul>
+<h1 id="for-ahp-analysis">For AHP Analysis</h1>
+<h2 id="rasterising">Rasterising</h2>
+<ul>
+<li>At the Layers panel, click on the relevant layer to make it active</li>
+<li>From the icon bar, click on the Open Attribute Table icon</li>
+<li>Click on the Open Field Calculator icon</li>
+<li>Keep Create a new field option check</li>
+<li>For Output field name, type POI_CODE At the Expression pane, type 1 Click ‘Ok’ and save your changes by clicking on toggle editing</li>
+<li>From the menu bar, select Raster → Conversion → Rasterise (Vector to Raster). The Raster (Vector to Raster) dialog window appears.</li>
+<li>For Input layer, select your relevant layer from the drop-down list</li>
+<li>For Field to use for a burn-in value, select POI_CODE from the drop-down list.</li>
+<li>For Output raster size units, select Georeferenced units</li>
+<li>Keep both horizontal and vertical resolutions at 30</li>
+<li>For Output extent, click on Calculate from Layer → DEM Click ‘Run’, then ‘Close’ the dialog box</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800121-f43dcc54-3cee-481e-9a6c-c55e8767b810.png" alt="4" /><figcaption aria-hidden="true">4</figcaption>
+</figure>
+<ul>
+<li>Right click on the layer and save as GeoPackage</li>
+<li>Delete the temporary layer</li>
+</ul>
+<h2 id="proximity-layer">Proximity Layer</h2>
+<ul>
+<li>Next, we create the proximity map</li>
+<li>From the menu bar, select Raster → Analysis → Proximity (Raster Distance)</li>
+<li>For Input layer, select raster_coasts from the drop-down list</li>
+<li>For Distance units, select Georeferenced coordinates from the drop-down list</li>
+<li>For Output data type, select Float32 from the drop-down list</li>
+<li>Click ‘Run’</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800123-7fc78206-8605-4258-8c39-8f8b7728d761.png" alt="5" /><figcaption aria-hidden="true">5</figcaption>
+</figure>
+<ul>
+<li>Export the layer and save it as GeoPackage, name it prox_(insertrelevantname)</li>
+<li>Delete the temporary layer</li>
+</ul>
+<h2 id="standardising-factor-scores">Standardising factor scores</h2>
+<ul>
+<li>To standardize the factor scores, we have to input the following formula</li>
+<li>From the menu bar, click on Vector → Raster Calculator</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800127-bdba0098-37d5-45ba-9fae-7abaed9fcec6.png" alt="7" /><figcaption aria-hidden="true">7</figcaption>
+</figure>
+<ul>
+<li>Right click on the Slope layer, click on Properties<br />
+</li>
+<li>From the Information tab, we can see the minimum and maximum values of the layer</li>
+<li>Input into the Expression pane of the Raster Calculator the following formula</li>
+<li>X would be the layer that you want to factor</li>
+<li>For Minimum, type 0 For Maximum, copy the maximum from the Information tab and paste it into the formula</li>
+</ul>
+<figure>
+<img src="https://user-images.githubusercontent.com/91875763/141800132-b5b5055c-750e-456a-b963-f3f263b53f51.png" alt="8" /><figcaption aria-hidden="true">8</figcaption>
+</figure>
+<ul>
+<li>Repeat step 40 for coast, river, volcano, airport, seaport, urban settlement, wet forest, shrubs and hotspot</li>
+<li>For factoring the roads layer</li>
+<li>Type in “1 -” in front of the formula, the formula should look similar to the picture below After factoring the layers, we will add all the factors together</li>
+<li>From the menu bar, click on Vector → Raster Calculator</li>
+<li>Type in the following into the Expression pane into the Raster Calculator “<a href="mailto:Factor_Slope@1" class="email">Factor_Slope@1</a>” * 0.078 + “<a href="mailto:Fac_coast@1" class="email">Fac_coast@1</a>” * 0.227 + “<a href="mailto:factor_river@1" class="email">factor_river@1</a>” * 0.227 + “<a href="mailto:fac_vol@1" class="email">fac_vol@1</a>” * 0.227 + “<a href="mailto:FAC_Airport@1" class="email">FAC_Airport@1</a>” * 0.051 + “<a href="mailto:Fac_Seaport@1" class="email">Fac_Seaport@1</a>” * 0.051 + “<a href="mailto:Fac_urban@1" class="email">Fac_urban@1</a>” * 0.064 + “<a href="mailto:Fac_Wet_Forest@1" class="email">Fac_Wet_Forest@1</a>” * 0.096 + “<a href="mailto:Fac_Shrubs@1" class="email">Fac_Shrubs@1</a>” * 0.096 + “<a href="mailto:Factor_hotspot@1" class="email">Factor_hotspot@1</a>” * 0.424 + “<a href="mailto:Fac_Road@1" class="email">Fac_Road@1</a>” * 0.060</li>
+<li>Next, we will convert the suitable site identified above from raster into vector. The process is called vectorisation</li>
+<li>From the menu bar, click on Raster → Conversion → Polygonize (Raster to Vector)</li>
+<li>For Input Layer, select AHP_suitability from the drop-down list</li>
+<li>For Name of the field to create, type Sites Keep the checkbox in front of Use 8-connectedness uncheck</li>
+<li>Click ‘Run’ after you are done</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

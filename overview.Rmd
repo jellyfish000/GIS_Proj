@@ -1,7 +1,6 @@
 ---
 title: "SMT201 Project"
-description: |
-  This website contains information of our project which aims to propose a new capital city in East Kalimantan to relieve the stress of Jakarta as a primary hub and to improve uneven development within Indonesia. 
+description: 
 
 author:
   - name: Lee Jia Li
@@ -14,9 +13,12 @@ output: distill::distill_article
 ## Introduction
 In 2019, President Joko Widodo announced plans to relocate the capital to Kalimantan on the island of Borneo, specifically East Kalimantan. Some of the primary objectives of this plan is to reduce developmental inequality between Java and other islands within the country and to reduce the burden of Jakarta as a primary economic hub. Hence, this project aims to propose potential sites through multi-criteria analysis and determine the most suitable site for the sustainable development of the new capital.
 
+![Source: https://edgeeffects.net/indonesia-new-capital-city/ ](https://user-images.githubusercontent.com/91875763/141802734-1f7e6751-602d-40ae-ad49-d421ac5270a8.jpg)
 
 ### Jakarta
 The current capital Jakarta - which houses more than 10 million people - is overwhelmed as a primary economic hub for Indonesia due to overpopulation. The extremely high population density gives rise to multiple issues such as traffic gridlock and heavy pollution. This is further exacerbated by the lack of access to basic necessities such as water due to over extraction of groundwater (Divya, 2021).
+
+![Source: https://melisajun.wordpress.com/2014/03/25/i-dream-of-having-mtr-in-jakarta/ ](https://user-images.githubusercontent.com/91875763/141802727-177e8589-bb40-4dd9-8dca-076501f15e7b.jpg)
 
 Furthermore, the physical plot of land is facing challenges such as increasing risk of catastrophic natural disasters and sinking of land. In fact, Jakarta is sinking by as much as 25 cm a year where almost half sits below sea level. 
 
@@ -25,6 +27,8 @@ Hence, the purpose of our project is to propose a new capital city in East Kalim
 ### Kalimantan Timur
 Kalimantan Timur is home to major mining and manufacturing activities. The area is also home to many rainforest species such as the OrangUtans species.
 However, rapid deforestation occurs in Kalimantan due to many instances of palm oil producers burning forested areas to clear land for plantations. As such, Kalimantan Timur is also susceptible to pollution from coal mining and haze from annual forest fires and the species and livelihood of communities that depend on these rainforests are threatened.
+
+![Source: https://www.indoneo.com/en/travel/the-mighty-mahakam-river/ ](https://user-images.githubusercontent.com/91875763/141802732-0ee454e7-93de-4144-a487-2c3a880c585b.jpg)
 
 
 ## Motivation of the Project
@@ -76,7 +80,11 @@ The project will comprise of, but not limited to the followings steps:
 
 ![gantt](https://user-images.githubusercontent.com/91875763/141772348-e03ad8ea-871c-4f9f-aa14-40cb285bf5e5.png)
 
-
+## Reference
+Karyza, D. (2021, May 16). Jakarta ranked world's most environmentally vulnerable
+city. The Jakarta Post. Retrieved November 15, 2021, from
+https://www.thejakartapost.com/news/2021/05/16/jakarta-ranked-worlds-most-e
+nvironmentally-vulnerable-city.html.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

@@ -5,6 +5,9 @@ description: |
 site: distill::distill_website
 ---
 ![](https://user-images.githubusercontent.com/91875763/141740060-362057f0-7e3f-4911-8e3e-7c4e855e09e4.png)
+About the project:
+The current capital of Indonesia, Jakarta, is facing major overcrowding and environmental issues such as sinking of land and catastrophic flooding. With these growing problems, Indonesia plans to alleviate pressures from Jakarta by relocating the capital city to East Kalimantan. Nonetheless, East Kalimantan faces its own set of challenges and major areas of concerns such as deforestation and lack of accessibility to essential facilities and infrastructures. As such, our team’s primary objective is to facilitate a smooth relocation of the capital city by proposing sites that ensure the sustainable development of the new capital city. We will achieve this by firstly surveying the study area in 5 different aspects; population and demographic, economic and business, transport and communication and infrastructures. Next, we will make use of the Analytical Hierarchy Process (AHP) to weigh 6 important factors for site selection; avoid steep slopes, avoid natural disaster risk areas, close to urban settlement areas, avoid natural forest, avoid hotspots, close proximity to roads, airports and seaports. Lastly, based on our result, we will propose a potential site of 4500-5500 hectares to build the new capital by filtering out sites that meet other criteria such as avoiding current major settlement areas.
+
 By: Lee Jia Li, Lee Wenxi Tammy, Ang Xin Yee
 
 From: Singapore Management of University
