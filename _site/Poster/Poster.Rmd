@@ -30,7 +30,7 @@ bibliography: packages.bib
 This project aims to propose the most suitable sites for the relocation of the new capital in Indonesia while taking environmental, economic and accessibility factors into consideration while prioritizing sustainability.
 
 # Motivation
-East Kalimantan faces its own set of challenges and concerns. With multiple factors of equal importance to consider, trade-off is involved for a big project like building a new city. Hence it is important to apply effective urban planning techniques so that city leaders are able to make more informed and balanced decisions.
+East Kalimantan faces its own set of challenges and concerns. With multiple important factors to consider, it is important to apply effective urban planning techniques so that city leaders are able to make more informed and balanced decisions.
 
 # Approach
 With the help of QGIS tools and built-in plugins, we plan to use GIS‐Based Multiple‐Criteria Decision Analysis to determine the suitable site. To determine the factor scores for each layer, we use the Analytic Hierarchy Process (AHP) combined with raster-based GIS analysis to produce spatial information of the potential site. For the survey of sites we used vector-based GIS analysis with maps for visualization.
@@ -41,14 +41,14 @@ Currently the major population is gathered at Kota Balikpapan and Kota Samarinda
 ![forest](https://user-images.githubusercontent.com/91875763/141743379-38856ab3-74db-4d64-a5e7-761aaf43a430.png)
 There are 3 mangroves in the study area located at Sepaku and coast of Penajam in Penajam Paser Utara and Muara Jawa area of Kutai Kartanegara. The forests are spread out across the study layer, mainly throughout Kutai Kartanegara where the forest around Loa Janan area remains largely undisturbed.
 ![hotspot](https://user-images.githubusercontent.com/91875763/141743381-ea3da5fe-ef97-4c13-9ece-17746f3c8f4f.png)
+Clusters of hotspots appear frequently near forested areas throughout the study area. 
 
-Most of the area with higher hotspot intensity appeared close to the forest throughout the study area. For example, some of the hotspots appeared near forests such as peatlands along the Makahas river in Kota Samarinda and Kutai Kartanegara which could be due to dry season or deforestation.
 ![ports](https://user-images.githubusercontent.com/91875763/141743387-92bb9f86-91f5-4f44-97ee-5ed0217ce61a.png)
 Airports found in two of the cities: Kota Samarinda and Kota Balikpapan which facilitates tourism and trade by providing connectivity to the global markets. 
 Most of the seaports along the Mahakam river that flows through Kutai Kartanegara and Kota Samarinda. There are also some seaports found near the Balikpapan bay and along rivers in Penajam Paser Utara.
-![roads](https://user-images.githubusercontent.com/91875763/141743393-e799f154-4332-465e-8779-947f7a61f4e0.png)
 
-The distribution shows that there is high road connectivity within the study area especially in the city area of Kota Balikpapan and Kota Samarinda, which facilitates accessibility to urban services.
+![roads](https://user-images.githubusercontent.com/91875763/141743393-e799f154-4332-465e-8779-947f7a61f4e0.png)
+Distribution of roads show high connectivity within the study area especially in the city area of Kota Balikpapan and Kota Samarinda, which facilitates accessibility to urban services.
 
 #   Steps
 1. Gather a vector-based layer of all the relevant points
