@@ -10,6 +10,7 @@ output: distill::distill_article
 |DEM SRTM 30m |digital elevation model at 30m resolution||https://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html|
 |Geological data||Shapefile|https://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html|
 |Forest fire hot spot data|This repository provides several years of forest hot spots data.|Shapefile|https://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html|
-|Buildings and Settlements||Shapefile|https://www.indonesia-geospasial.com/2020/12/download-shp-pemukiman-detail-seluruh.html|
+
+
 
 

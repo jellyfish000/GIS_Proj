@@ -21,7 +21,7 @@ Google fonts api stuff
 
 
 
-<title>RELOKOTA T13</title>
+<title>RELOKOTA</title>
 
 <script src="Poster_files/header-attrs-2.11/header-attrs.js"></script>
 
@@ -116,9 +116,9 @@ column-count: 3;
 -webkit-column-fill: auto;
 -moz-column-fill: auto;
 column-fill: auto;
--webkit-column-rule-width: 0.10mm;
--moz-column-rule-width: 0.10mm;
-column-rule-width: 0.10mm;
+-webkit-column-rule-width: 0.5mm;
+-moz-column-rule-width: 0.5mm;
+column-rule-width: 0.5mm;
 -webkit-column-rule-style: dashed;
 -moz-column-rule-style: dashed;
 column-rule-style: dashed;
@@ -285,7 +285,7 @@ font-size: 20pt;
 </div>
 <!-- Poster Title -->
 <div class= "poster_title">
-<h1 id="title">RELOKOTA T13</h1>
+<h1 id="title">RELOKOTA</h1>
 <h3 id="author">Lee Jia Li<sup></sup>, Tammy Lee Wenxi<sup></sup>, Ang Xin Yee<sup></sup></h3><br>
 
 </div>
@@ -308,48 +308,37 @@ font-size: 20pt;
 <h1>Approach</h1>
 <p>With the help of QGIS tools and built-in plugins, we plan to use GIS‐Based Multiple‐Criteria Decision Analysis to determine the suitable site. To determine the factor scores for each layer, we use the Analytic Hierarchy Process (AHP) combined with raster-based GIS analysis to produce spatial information of the potential site. For the survey of sites we used vector-based GIS analysis with maps for visualization.</p>
 </div>
-<div id="report-of-survey" class="section level1">
-<h1>Report of Survey</h1>
+<div id="model" class="section level1">
+<h1>Model</h1>
 <p><img src="https://user-images.githubusercontent.com/91875763/141743361-2b840ece-dc7c-44ab-9561-85013c892cfe.png" alt="settlement" />
 Currently the major population is gathered at Kota Balikpapan and Kota Samarinda, while the rest of the population are quite distributed across the study area. This is a natural phenomenon as rural-urban migration is common with the growth of cities.
 <img src="https://user-images.githubusercontent.com/91875763/141743379-38856ab3-74db-4d64-a5e7-761aaf43a430.png" alt="forest" />
-There are 3 mangroves in the study area located at Sepaku and coast of Penajam in Penajam Paser Utara and Muara Jawa area of Kutai Kartanegara. The forests are spread out across the study layer, mainly throughout Kutai Kartanegara where the forest around Loa Janan area remains largely undisturbed.
-<img src="https://user-images.githubusercontent.com/91875763/141743381-ea3da5fe-ef97-4c13-9ece-17746f3c8f4f.png" alt="hotspot" /></p>
-<p>Most of the area with higher hotspot intensity appeared close to the forest throughout the study area. For example, some of the hotspots appeared near forests such as peatlands along the Makahas river in Kota Samarinda and Kutai Kartanegara which could be due to dry season or deforestation.
-<img src="https://user-images.githubusercontent.com/91875763/141743387-92bb9f86-91f5-4f44-97ee-5ed0217ce61a.png" alt="ports" />
-Airports found in two of the cities: Kota Samarinda and Kota Balikpapan which facilitates tourism and trade by providing connectivity to the global markets.
-Most of the seaports along the Mahakam river that flows through Kutai Kartanegara and Kota Samarinda. There are also some seaports found near the Balikpapan bay and along rivers in Penajam Paser Utara.
-<img src="https://user-images.githubusercontent.com/91875763/141743393-e799f154-4332-465e-8779-947f7a61f4e0.png" alt="roads" /></p>
-<p>The distribution shows that there is high road connectivity within the study area especially in the city area of Kota Balikpapan and Kota Samarinda, which facilitates accessibility to urban services.</p>
+There are 3 mangroves in the study area located at Sepaku and coast of Penajam in Penajam Paser Utara and Muara Jawa area of Kutai Kartanegara. The forests are spread out across the study layer, mainly throughout Kutai Kartanegara where the forest around Loa Janan area remains largely undisturbed.</p>
+<p><img src="https://user-images.githubusercontent.com/91875763/141743381-ea3da5fe-ef97-4c13-9ece-17746f3c8f4f.png" alt="hotspot" />
+Most of the area with higher hotspot intensity appeared close to the forest throughout the study area. For example, some of the hotspots appeared near forests such as peatlands along the Makahas river in Kota Samarinda and Kutai Kartanegara which could be due to dry season or deforestation.</p>
+<p><img src="https://user-images.githubusercontent.com/91875763/141743387-92bb9f86-91f5-4f44-97ee-5ed0217ce61a.png" alt="ports" />
+There are 2 International Airports found in two of the cities: Kota Samarinda and Kota Balikpapan which facilitates tourism and trade by providing access and connectivity to the global markets.
+Most of the seaports along the Mahakam river that flows through Kutai Kartanegara and Kota Samarinda. There are also some seaports found near the BALIKPAPAN bay and along rivers in Penajam Paser Utara.Inter-island ports located nearer to the coast at Muara Jawa, Kutai Kartanegara area are typically used to transport cargo for trading.</p>
+<p><img src="https://user-images.githubusercontent.com/91875763/141743393-e799f154-4332-465e-8779-947f7a61f4e0.png" alt="roads" />
+The distribution shows that there is high road connectivity within the study area especially in the city area of Kota Balikpapan and Kota Samarinda, which facilitates accessibility to urban services.</p>
 </div>
 <div id="steps" class="section level1">
 <h1>Steps</h1>
-<ol style="list-style-type: decimal">
-<li>Gather a vector-based layer of all the relevant points</li>
-<li>Convert vector layer to raster layer</li>
-<li>Create a proximity layer for each raster layer</li>
-<li>Conduct AHP and get the score for each factor
+<p>1.Gather a vector-based layer of all the relevant points
+2.Convert vector layer to raster layer
+3.Create a proximity layer for each raster layer
+4. Conduct AHP and get the score for each factor
 <img width="500" alt="ahp"
-src="https://user-images.githubusercontent.com/91875763/141743376-531aaa0c-d610-4d63-b57d-08516dcff22d.png"></li>
-<li>Standardise factor score layers using the following formula</li>
-<li>Use Raster calculator to create a AHP suitability layer</li>
-<li>Vectorise the AHP suitability layer</li>
-<li>Keep the sites labelled 1, which are potential areas for the site selection
-# Result
-<img src="https://user-images.githubusercontent.com/91875763/141743399-f50ee268-98ed-487b-a1b3-27d2688cc578.png" alt="site1" /><img src="https://user-images.githubusercontent.com/91875763/141743405-8b905ed0-839c-4a39-b00a-fbbd29aae3cf.png" alt="site2" /></li>
-</ol>
-<p>Due to many potential site areas, we have decided to narrow down to 2 sites by considering the proximity to major settlements and infrastructures. These 2 areas are close to medical care and water treatment, which are necessities for a city.</p>
-<p>As for the deciding factor, we decided to re-emphasise on the importance of preserving the remaining forest in our study area. As such, we have decided to go with the site that covers the least amount of forest.
-<img src="https://user-images.githubusercontent.com/91875763/141779721-33047b19-64ec-4b95-a5d1-f160d9df42f8.png" alt="site" />
-Finally, this is the area of our proposed site. It is located near the border of Kutai Kartanegara and Penajam Paser Utara, cutting across Suko Mulyo, Semoi Dua and Argo Mulyo.</p>
+src="https://user-images.githubusercontent.com/91875763/141743376-531aaa0c-d610-4d63-b57d-08516dcff22d.png"></p>
+<p><img width="500" alt="result" src="https://user-images.githubusercontent.com/91875763/141743391-fcf094ca-01cd-40e5-84af-9e87b532987f.png"></p>
 </div>
-<div id="future-research" class="section level1">
-<h1>Future Research</h1>
-<ul>
-<li>Improve the score of our AHP by lowering the consistency score.</li>
-<li>Consult professionals to give a more realistic weightage and comparison.</li>
-<li>Include other important factors such as proximity to water treatment plants in AHP to ensures that all other important aspects are not overlooked</li>
-</ul>
+<div id="result" class="section level1">
+<h1>Result</h1>
+<p><img src="https://user-images.githubusercontent.com/91875763/141743399-f50ee268-98ed-487b-a1b3-27d2688cc578.png" alt="site1" />
+<img src="https://user-images.githubusercontent.com/91875763/141743405-8b905ed0-839c-4a39-b00a-fbbd29aae3cf.png" alt="site2" /></p>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
 </div>
 </div>
 </div>

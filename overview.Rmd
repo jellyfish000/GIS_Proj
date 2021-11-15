@@ -12,36 +12,53 @@ output: distill::distill_article
 ---
 
 ## Introduction
-In 2019, President Joko Widodo announced plans to relocate the capital to Kalimantan on the island of Borneo, specifically East Kalimantan. Some of the primary objectives of this plan is to reduce developmental inequality between Java and other islands within the country and to reduce the burden of Jakarta as a primary economic hub. 
+In 2019, President Joko Widodo announced plans to relocate the capital to Kalimantan on the island of Borneo, specifically East Kalimantan. Some of the primary objectives of this plan is to reduce developmental inequality between Java and other islands within the country and to reduce the burden of Jakarta as a primary economic hub. Hence, this project aims to propose potential sites through multi-criteria analysis and determine the most suitable site for the sustainable development of the new capital.
+
 
 ### Jakarta
-The current capital Jakarta - which houses more than 10 million people - is overwhelmed as a primary economic hub for Indonesia due to overpopulation. The extremely high population density gives rise to multiple issues such as traffic gridlock and heavy pollution. This is further exacerbated by the lack of access to basic necessities such as water due to over extraction of groundwater.
+The current capital Jakarta - which houses more than 10 million people - is overwhelmed as a primary economic hub for Indonesia due to overpopulation. The extremely high population density gives rise to multiple issues such as traffic gridlock and heavy pollution. This is further exacerbated by the lack of access to basic necessities such as water due to over extraction of groundwater (Divya, 2021).
 
-Furthermore, the physical plot of land is facing challenges such as increasing risk of catastrophic natural disasters and sinking of land. In fact, Jakarta is sinking by as much as 25cm a year where almost half sits below sea level. 
+Furthermore, the physical plot of land is facing challenges such as increasing risk of catastrophic natural disasters and sinking of land. In fact, Jakarta is sinking by as much as 25 cm a year where almost half sits below sea level. 
 
 Hence, the purpose of our project is to propose a new capital city in East Kalimantan to relieve the stress of Jakarta as a primary hub and to improve uneven development within Indonesia. 
 
 ### Kalimantan Timur
-Kalimantan Timur (East Kalimantan) is home to major mining and manufacturing activities. The area is also home to many rainforest species such as the Orang Utans species. However, rapid deforestation occurs in Kalimantan due to many instances of palm oil producers burning forested areas to clear land for plantations. As such, Kalimantan Timur is also susceptible to pollution from coal mining and haze from annual forest fires and the species and livelihood of communities that depend on these rainforests are threatened.
+Kalimantan Timur is home to major mining and manufacturing activities. The area is also home to many rainforest species such as the OrangUtans species.
+However, rapid deforestation occurs in Kalimantan due to many instances of palm oil producers burning forested areas to clear land for plantations. As such, Kalimantan Timur is also susceptible to pollution from coal mining and haze from annual forest fires and the species and livelihood of communities that depend on these rainforests are threatened.
+
 
 ## Motivation of the Project
 
+As Indonesia plans to alleviate environmental and population pressures from Jakarta, the new development site should aim to prioritise these factors as well. Nonetheless, East Kalimantan faces its own set of challenges and concerns which should be taken into consideration in the new capital development project.
+
+With effective urban planning, city leaders are able to achieve sustainable development by making more informed planning decisions while balancing the needs of the economy, environment and current residents.
+
+Hence, with the help of QGIS, we aim to derive valuable information about East Kalimantan to help Indonesia better anticipate the future.
 
 ## Project Objective
-Our team wants to help Indonesia facilitate a smooth relocation of the capital city to shift the economic stress placed on Jakarta. 
+Our team wants to help Indonesia facilitate a smooth relocation of the capital city to shift the economic stress placed on Jakarta. We aim to propose a site that will promote the sustainable development of the new capital. Hence, we will be surveying and analysing the following factors to understand more about the East Kalimantan:
++ Population and Demographic
++ Economic and Businesses
++ Transport and Communication
++ Infrastructure
++ Environment and Hazard
 
-In order to choose a suitable location for this city, the following factors are considered and weighed:
+
+In order to choose a suitable location for this city, the following factors are considered and weighed in our multi-criteria analysis:
 
 + Environmental factors: to pose the least disruption to the environment in the existing area and be far away from natural disasters:
-    + Coastal floods
+    + Sea coats
+    + Major Rivers
+    + Volcanoes
+    + Natural Forest
     + Hotspots
     + Slopes
+    
 + Accessibility factors: to ensure that existing infrastructures are adequate for the new capital city
    + Seaport Airport
    + Roads
    + Proximity to Urban Settlements
 
-We aim to propose a site that promotes sustainable development to ensure that the of the new capital.
 
 ## Scope of Work
 
@@ -57,13 +74,14 @@ The project will comprise of, but not limited to the followings steps:
 
 ## Project Schedule
 
+![gantt](https://user-images.githubusercontent.com/91875763/141772348-e03ad8ea-871c-4f9f-aa14-40cb285bf5e5.png)
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
 
 
 

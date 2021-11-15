@@ -1,10 +1,13 @@
 ---
-title: "SMT201 GIS Project"
+title: "RELOKOTA"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to the our project website. Click on the menu to learn more about the relocation of Indonesia's capital city!
 site: distill::distill_website
 ---
+![](https://user-images.githubusercontent.com/91875763/141740060-362057f0-7e3f-4911-8e3e-7c4e855e09e4.png)
+By: Lee Jia Li, Lee Wenxi Tammy, Ang Xin Yee
 
+From: Singapore Management of University
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
